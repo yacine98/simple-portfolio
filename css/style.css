@@ -45,3 +45,18 @@ footer {
   border-radius: 4px;
   font-weight: bold;
 }
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.cookie-banner button {
+  margin: 0 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}

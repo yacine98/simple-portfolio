@@ -5,6 +5,23 @@
   <meta charset="UTF-8">
   <title>Portfolio - Accueil</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  // Consent mode configuration
+  if (localStorage.getItem('consentMode') === null) {
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      personalization_storage: 'denied',
+      functionality_storage: 'denied',
+      security_storage: 'denied',
+    });
+  } else {
+    gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')));
+  }
+</script>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -50,6 +67,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <footer>
     <p>© 2026 Yacine Dia</p>
   </footer>
+  
+  <script src="js/main.js"></script>
+  <div id="cookie-consent-banner" class="cookie-banner">
+  <p>Nous utilisons des cookies pour améliorer votre expérience.</p>
+  <button id="accept-all">Tout accepter</button>
+  <button id="reject-all">Tout refuser</button>
+</div>
+
 </body>
 
 </html>
