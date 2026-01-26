@@ -38,3 +38,11 @@ document.addEventListener("DOMContentLoaded", function () {
     banner.style.display = "none";
   });
 });
+
+// document.getElementById("profile-form").addEventListener("submit", function(e){
+//   e.preventDefault();
+//   const role = document.getElementById("job-function").value;
+//   gtag('set', {'user_role': role});
+//   alert('Role sent to GA: ' + role);
+// });
+

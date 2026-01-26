@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Profile - GA Tutorials</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  </script>
+</head>
+
+<body>
+  <!-- Header / nav -->
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container-lg pt-3">
+    <h1>Choose your role:</h1>
+    <form id="profile-form">
+      <div class="form-group">
+        <label for="job-function">Job Function</label>
+        <select class="form-control" id="job-function" name="job-function">
+          <option selected disabled>Choose One</option>
+          <option value="business_owner">Business Owner</option>
+          <option value="developer">Developer</option>
+          <option value="marketer">Marketer</option>
+          <option value="other">Other</option>
+        </select>
+        <small>This example shows how to set user properties in Google Analytics.</small>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Yacine Dia</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
